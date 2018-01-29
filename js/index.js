@@ -269,6 +269,70 @@ function expandRoger(){
             }
             $('#peterReadLess').click(retractPeter);
 
+            // Read More/Less Allen
+
+            function expandAllen(){
+               $('#allenText').css({
+                 "height": "auto",
+               })
+               $('#allenReadMore').css({
+                 "display": "none",
+               })
+               $('#allenReadLess').css({
+                 "display": "inline-block",
+               })
+               event.preventDefault();
+               ;
+             }
+             $('#allenReadMore').click(expandAllen);
+
+             function retractAllen(){
+                $('#allenText').css({
+                  "height": "110px",
+                })
+                $('#allenReadMore').css({
+                  "display": "inline-block",
+                })
+                $('#allenReadLess').css({
+                  "display": "none",
+                })
+                event.preventDefault();
+                ;
+              }
+              $('#allenReadLess').click(retractAllen);
+
+              // Read More/Less Perez
+
+              function expandPerez(){
+                 $('#perezText').css({
+                   "height": "auto",
+                 })
+                 $('#perezReadMore').css({
+                   "display": "none",
+                 })
+                 $('#perezReadLess').css({
+                   "display": "inline-block",
+                 })
+                 event.preventDefault();
+                 ;
+               }
+               $('#perezReadMore').click(expandPerez);
+
+               function retractPerez(){
+                  $('#perezText').css({
+                    "height": "110px",
+                  })
+                  $('#perezReadMore').css({
+                    "display": "inline-block",
+                  })
+                  $('#perezReadLess').css({
+                    "display": "none",
+                  })
+                  event.preventDefault();
+                  ;
+                }
+                $('#perezReadLess').click(retractPerez);
+
 
 // ---
 
